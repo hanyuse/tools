@@ -1,0 +1,19 @@
+<view class='tab' bindtap='changTab'>
+  <view data-tab='0' class='tab-items {{currentTab==0?"active":""}}'>
+    待托运
+  </view>
+  <view data-tab='1' class='tab-items {{currentTab==1?"active":""}}'>
+    运输中
+  </view>
+  <view data-tab='2' class='tab-items {{currentTab==2?"active":""}}'>
+    已完成
+  </view>
+</view>
+<swiper current-item-id='{{currentTab}}' bindchange='swiperChange'>
+  <swiper-item item-id="0">
+    
+
+  </swiper-item>
+  <swiper-item item-id="1">1</swiper-item>
+  <swiper-item item-id="2">2</swiper-item>
+</swiper>

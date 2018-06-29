@@ -1,0 +1,27 @@
+page{
+  background-color: #fff;
+}
+.tab{
+  width:100%;
+  display: flex;
+  box-sizing: border-box;
+  justify-content:space-around;
+  border-bottom: 1rpx solid #e6e6e6;
+  background-color: #ffffff;
+  color: #111;
+}
+
+.tab-items{
+  box-sizing: border-box;
+  text-align: center;
+  width:33.3%;
+  flex: 1 0 auto;
+  padding:10rpx 0;
+}
+.active{
+  color: #04B4AE;
+  border-bottom: 2rpx solid #04B4AE;
+}
+.swiper{
+  flex: 1 0 auto;
+}
