@@ -1,0 +1,37 @@
+<view class='slot'></view>
+<view class='item'>
+  <view class='between-center padding' bindtap='login'>
+    <view class='userInfo'>
+      <view class='mainInfo'>
+        <view class='avatar'>
+          <open-data class='avatar' type='userAvatarUrl'></open-data>
+        </view>
+        <view style='margin-left:20rpx;'>
+          <block wx:if='{{auth==""?true:false}}'>
+            <text>未登入</text>
+          </block>
+          <block wx:else>
+            <view>
+              姓名: {{userInfo.name}}
+            </view>
+            <view>
+              手机: {{userInfo.phone}}
+            </view>
+          </block>
+        </view>
+      </view>
+      <view>></view>
+    </view>
+  </view>
+  <view hidden='{{auth==""?true:false}}'>
+    <view class='split'></view>
+  </view>
+</view>
+<view wx:if="{{auth!=''?true:false}}">
+  <view class='slot'></view>
+  <view class='item'>
+    <view class='padding'>
+      <button type="warn" bindtap='loginout'>退出</button>
+    </view>
+  </view>
+</view>

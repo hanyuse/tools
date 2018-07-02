@@ -1,0 +1,54 @@
+
+
+<view wx:if="{{auth&&auth!=''?false:true}}">
+  <view style="margin-top:30rpx;"></view>
+  <view class='item padding'>
+    <form bindsubmit="formSubmit">
+      <view class='column-center padding'>
+        <view class='avatar'>
+          <open-data class='avatar' type='userAvatarUrl'></open-data>
+        </view>
+         <view class='padding' style="width:95%;">
+          <input name="name" placeholder='姓名' maxlength='15' type='text'></input>
+        </view>
+        <view class='split'></view>
+        <view class='padding' style="width:95%;">
+          <input name="phone" placeholder='手机号' maxlength='11' type='number'></input>
+        </view>
+        <view class='split'></view>
+        <view class='padding' style="width:95%;">
+          <input name="pwd" placeholder='密码' type='number'></input>
+        </view>
+        <view class='split'></view>
+        <view class='padding'>此密码可以在APP和微信公众号中使用</view>  
+      </view>
+      <view class='item'>
+          <button class='' type='warn' formType="submit">登录</button>
+      </view>
+      <view  class='item' style='margin-top:30rpx;'>
+        <button type='warn' formType="reset">重置</button>
+      </view>
+    </form>
+  </view> 
+</view>
+
+<view wx:else>
+  <view class='slot'></view>
+  <view class='item'>
+    <view class='between-center padding'>
+      <view>姓名:</view>
+      <view>
+        <input placeholder='在此输入您的姓名' value="{{userInfo.name}}" style='text-align:right'></input>
+      </view>
+    </view>
+    <view class='split'></view>
+    <view class='between-center padding'>
+      <view>手机号:</view>
+      <view>{{userInfo.phone}}</view>
+    </view>
+  </view>
+  <view class='slot'></view>
+  <view class='item'>
+    <button type="warn">保存</button>
+  </view>
+</view>
