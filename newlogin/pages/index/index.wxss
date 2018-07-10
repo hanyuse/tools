@@ -1,0 +1,75 @@
+
+page{
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  width: 100%;
+  position: fixed;
+  font-size: 32rpx;
+}
+
+.top-gut{
+  height:40rpx;
+}
+
+.content{
+  box-sizing: border-box;
+  padding: 20rpx 0;
+  width:100%;
+  background-color: #FFFFFF;
+}
+
+.item{
+  box-sizing: border-box;
+  width:100%;
+  padding:0 20rpx;
+}
+
+.split{
+  box-sizing: border-box;
+  width:95%;
+  border-top:2rpx solid #dbdbdb;
+  margin-left: 30rpx;
+}
+
+.phone{
+  font-size: 28rpx;
+}
+
+
+.between-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-around{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.right-arrow{
+   width:48rpx;
+  height:48rpx;
+}
+
+
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 96rpx;
+  height: 96rpx;
+  margin-right:20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
